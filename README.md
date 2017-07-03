@@ -45,4 +45,3 @@ Author Information
 ------------------
 
 This role was created in 2017 by [Michal Schott](http://github.com/michalschott).
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
