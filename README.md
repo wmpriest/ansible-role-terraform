@@ -1,6 +1,8 @@
 Ansible Role: Terraform
 =========
 
+[![Build Status](https://travis-ci.org/michalschott/ansible-role-terraform.svg?branch=master)](https://travis-ci.org/michalschott/ansible-role-terraform)
+
 Installs Terraform on Linux amd64.
 
 This role downloads Terraform from Hashicorp website, checks checksum and installs it in your system.
