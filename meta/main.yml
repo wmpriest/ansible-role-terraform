@@ -1,0 +1,15 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Michal Schott
+  description: Terraform instalation for Linux x64
+  license: MIT
+  min_ansible_version: 2.3.0
+  github_branch: master
+  platforms:
+  - name: EL
+    versions:
+      - 7
+  galaxy_tags:
+    - terraform

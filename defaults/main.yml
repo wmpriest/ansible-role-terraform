@@ -1,0 +1,6 @@
+---
+terraform_version: 0.8.8
+terraform_checksum: "sha256:403d65b8a728b8dffcdd829262b57949bce9748b91f2e82dfd6d61692236b376"
+terraform_path: /usr/local/bin
+terraform_owner: root
+terraform_group: root
