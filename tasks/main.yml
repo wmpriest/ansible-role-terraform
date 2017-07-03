@@ -2,7 +2,7 @@
 - name: TERRAFORM | download arichve
   get_url:
     url: "https://releases.hashicorp.com/terraform/{{ terraform_version }}/terraform_{{ terraform_version }}_linux_amd64.zip"
-    dest: /tmp/terraform.zip
+    dest: /tmp/terraform_{{ terraform_version }}.zip
     mode: 0600
     checksum: "{{ terraform_checksum }}"
   tags:
@@ -10,7 +10,7 @@
 
 - name: TERRAFORM | unarchive zip
   unarchive:
-    src: /tmp/terraform.zip
+    src: /tmp/terraform_{{ terraform_version }}.zip
     dest: "{{ terraform_path }}"
     owner: "{{ terraform_owner }}"
     group: "{{ terraform_group }}"
