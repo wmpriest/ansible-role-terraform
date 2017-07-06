@@ -1,0 +1,17 @@
+---
+# Test default params
+- hosts: all
+
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=yes cache_valid_time=3600
+      when: ansible_os_family == 'Debian'
+    - name: Install missing tools (apt)
+      apt: name=unzip state=present
+      when: ansible_os_family == 'Debian'
+    - name: Install missing tools (yum)
+      yum: name=unzip state=present
+      when: ansible_os_family == 'RedHat'
+
+  roles:
+    - role_under_test
